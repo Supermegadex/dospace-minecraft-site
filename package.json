@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Supermegadex/dospace-minecraft-site#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4"
   }
 }
