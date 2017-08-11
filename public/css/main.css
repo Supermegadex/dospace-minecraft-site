@@ -1,0 +1,69 @@
+#domain {
+  margin-right: 10px;
+}
+
+body, .nav-wrapper, .db {
+  color: #003865;
+}
+
+.card-title {
+  padding: 10px;
+}
+
+#power-button {
+  width: 64px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #title {
+    margin-left: 76px;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.world {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+p > img {
+  max-width: 100%;
+}
+
+iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#power {
+  margin-left: 20px;
+}
+
+.green {
+  background-color: #b5bd00 !important;
+}
+
+.blue {
+  background-color: #66d4f0 !important;
+}
+
+.red {
+  background-color: #dc582a !important;
+}
+
+.yellow {
+  background-color: #ffb81c !important;
+}
+
+code {
+  text-decoration: underline;
+}
