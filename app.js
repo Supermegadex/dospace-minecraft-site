@@ -9,16 +9,17 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
 
-let checkStatus = () => {
-  let search = child.spawn("echo", ["Hello, there!"]);
-  search.stdout.on('data', res => {
-    console.log(res);
-    return res;
+let checkStatus = res => {
+  let search = child.spawn("cat", ["test.txt"]);
+  search.stdout.on('data', data => {
+    let test = data.toString().match("spigot");
+    console.log(test);
+    res.send(!!test);
   })
 }
 
 app.post("/status", (req, res) => {
-  res.send(checkStatus());
+  checkStatus(res);
 })
 
 http.listen(process.env.PORT || 3000);
