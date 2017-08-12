@@ -1,6 +1,10 @@
 var converter = new showdown.Converter();
 
 $(function () {
+  init();
+});
+
+function init() {
   $.ajax({
     url: "/getStatus",
     method: "GET",
@@ -10,7 +14,7 @@ $(function () {
     url: "/getNews",
     method: "GET"
   }).done(renderNews);
-});
+}
 
 function renderColors(on) {
   if (on) {
@@ -25,7 +29,7 @@ function renderColors(on) {
 }
 
 function setToolTip(on) {
-  $(".brand-logo").tooltip({ delay: 50, position: "bottom", tooltip: on ? "The server is currently on. Jump on in!" : "The server is down right now. Sorry!" })
+  $("#power-button").tooltip({ delay: 50, position: "bottom", tooltip: on ? "The server is currently on. Jump on in!" : "The server is down right now. Sorry!" })
   if (!on) {
     $("#domain").addClass("strike");
   }

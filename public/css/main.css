@@ -1,9 +1,41 @@
+@font-face {
+  font-family: "Avenir Light";
+  src: url(/fonts/avenir/avenir-light.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url(/fonts/avenir/avenir-heavy.woff2) format('woff2')
+}
+
+h1,
+h2,
+h3,
+#title {
+  font-family: "Avenir Heavy", Arial, Helvetica, sans-serif;;
+  text-transform: uppercase;
+  color: #003865;
+}
+
+.card .card-image .card-title {
+  color: #003865;
+  padding: 10px;
+  background-color: #66d4f0;
+  margin: 24px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-family: "Avenir Heavy";
+}
+
 #domain {
   margin-right: 10px;
 }
 
 body, .nav-wrapper, .db {
   color: #003865;
+  font-family: "Avenir Light", Arial, Helvetica, sans-serif;
 }
 
 .card-title {
